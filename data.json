@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Mastering Node.js Streams",
+    "speakers": ["Alice Johnson", "Bob Smith"],
+    "categories": ["Node.js", "Performance", "Backend"],
+    "duration": 60,
+    "description": "Learn how to efficiently handle large datasets using Node.js streams. This talk covers readable, writable, and transform streams with practical examples."
+  },
+  {
+    "id": 2,
+    "title": "Modern CSS Layouts: Grid & Flexbox",
+    "speakers": ["Charlie Davis"],
+    "categories": ["CSS", "Frontend", "Design"],
+    "duration": 60,
+    "description": "A deep dive into creating responsive and complex layouts using CSS Grid and Flexbox without the need for heavy frameworks."
+  },
+  {
+    "id": 3,
+    "title": "Building Accessible Web Applications",
+    "speakers": ["Diana Prince", "Ethan Hunt"],
+    "categories": ["Accessibility", "Frontend", "WAI-ARIA"],
+    "duration": 60,
+    "description": "Ensure your web applications are usable by everyone. We'll discuss semantic HTML, ARIA roles, and keyboard navigation strategies."
+  },
+  {
+    "id": 4,
+    "title": "The Power of TypeScript in Large Scale Apps",
+    "speakers": ["Fiona Gallagher"],
+    "categories": ["TypeScript", "JavaScript", "Developer Experience"],
+    "duration": 60,
+    "description": "Explore how TypeScript enhances maintainability and type safety in complex codebases. Learn advanced types and structural typing."
+  },
+  {
+    "id": 5,
+    "title": "Securing Your Express APIs",
+    "speakers": ["George Miller"],
+    "categories": ["Security", "Node.js", "Express"],
+    "duration": 60,
+    "description": "Common security pitfalls in Express and how to avoid them. Learn about Helmet, rate limiting, and JWT authentication best practices."
+  },
+  {
+    "id": 6,
+    "title": "Optimizing Frontend Performance",
+    "speakers": ["Hannah Abbott", "Ian Wright"],
+    "categories": ["Performance", "Frontend", "Web Vitals"],
+    "duration": 60,
+    "description": "Strategies for improving PageSpeed and Core Web Vitals. Focus on lazy loading, image optimization, and code splitting."
+  }
+]
