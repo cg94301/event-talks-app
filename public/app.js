@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // If filtering, only check the talk content
             const matchesFilter = talk.categories.some(cat => cat.toLowerCase().includes(filteredFilter)) || 
-                                 talk.title.toLowerCase().includes(filteredFilter);
+                                 talk.title.toLowerCase().includes(filteredFilter) ||
+                                 talk.speakers.some(speaker => speaker.toLowerCase().includes(filteredFilter));
 
             if (matchesFilter || !filteredFilter) {
                 // Create talk element
