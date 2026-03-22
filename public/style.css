@@ -44,14 +44,42 @@ header h1 {
     margin-bottom: 2rem;
 }
 
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
 #categorySearch {
     width: 100%;
     padding: 1rem;
+    padding-right: 3rem; /* Space for the clear button */
     font-size: 1rem;
     border: 2px solid #e2e8f0;
     border-radius: 8px;
     outline: none;
     transition: border-color 0.3s ease;
+}
+
+.clear-button {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #94a3b8;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    line-height: 1;
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.clear-button:hover {
+    color: var(--primary-color);
+    background-color: #f1f5f9;
 }
 
 #categorySearch:focus {

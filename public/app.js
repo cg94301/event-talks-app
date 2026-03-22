@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const scheduleContainer = document.getElementById('schedule');
     const categorySearch = document.getElementById('categorySearch');
+    const clearSearchBtn = document.getElementById('clearSearch');
     let allTalks = [];
 
     // Configuration
@@ -97,8 +98,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for search input
     categorySearch.addEventListener('input', (e) => {
-        renderSchedule(allTalks, e.target.value);
+        const value = e.target.value;
+        renderSchedule(allTalks, value);
+        toggleClearButton(value);
     });
+
+    // Event listener for clear button
+    clearSearchBtn.addEventListener('click', () => {
+        categorySearch.value = '';
+        renderSchedule(allTalks, '');
+        toggleClearButton('');
+        categorySearch.focus();
+    });
+
+    // Show/hide the clear button
+    function toggleClearButton(value) {
+        clearSearchBtn.style.display = value.trim() ? 'block' : 'none';
+    }
 
     // Initial load
     fetchSchedule();
